@@ -1,0 +1,211 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    background:#f4f7fc;
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.wrapper{
+    display:flex;
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+    width:260px;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    position:fixed;
+    height:100%;
+    overflow-y:auto;
+}
+
+.sidebar .logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.sidebar .logo h4{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:8px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+    transform:translateX(5px);
+}
+
+.sidebar i{
+    margin-right:8px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content{
+    margin-left:260px;
+    width:100%;
+    padding:25px;
+}
+
+/* =========================
+   CARD DASHBOARD
+========================= */
+
+.dashboard-card{
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h6{
+    color:#6b7280;
+}
+
+.dashboard-card h2{
+    font-weight:bold;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table{
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.table-hover tbody tr:hover{
+    background:#eef4ff;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    border-radius:10px;
+}
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-content{
+    border-radius:15px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    border-radius:15px;
+}
+
+/* =========================
+   CHART
+========================= */
+
+canvas{
+    max-height:350px;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode{
+    background:#111827;
+    color:white;
+}
+
+.dark-mode .main-content{
+    background:#111827;
+}
+
+.dark-mode .card{
+    background:#1f2937;
+    color:white;
+}
+
+.dark-mode .navbar{
+    background:#1f2937 !important;
+    color:white;
+}
+
+.dark-mode .table{
+    color:white;
+}
+
+.dark-mode .table-dark{
+    background:#374151;
+}
+
+.dark-mode input{
+    background:#374151;
+    color:white;
+    border:none;
+}
+
+.dark-mode .modal-content{
+    background:#1f2937;
+    color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main-content{
+        margin-left:0;
+    }
+
+    .wrapper{
+        flex-direction:column;
+    }
+
+}
